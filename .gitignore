@@ -1,0 +1,15 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+
+# Node/JS
+node_modules/
+dist/
+build/
+.cache/
+.next/
+.out/
+
+# Env
+.env*

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JustSite — Make it simple</title>
+  <meta name="description" content="JustSite — конструктор сайтов нового поколения. Простота, скорость и помощь AI для роста продаж. Слоган: Make it simple." />
+  <meta name="theme-color" content="#0c0f14" />
+  <link rel="preload" href="/assets/fonts/Bitcount-Single.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="cube" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="preloader-text">JustSite</div>
+      <div class="progress">
+        <div class="bar" id="loaderBar"></div>
+      </div>
+      <div class="progress-info">
+        <span id="loaderPercent">0%</span> Загружаем магию…
+      </div>
+    </div>
+  </div>
+
+  <!-- Fixed gradient glow background + starfield canvas -->
+  <canvas id="space" aria-hidden="true"></canvas>
+  <div class="bg-glow" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container">
+      <a class="brand" href="#">JustSite<span class="dot">•</span></a>
+      <nav class="menu">
+        <a href="#features">Возможности</a>
+        <a href="#editor">Редактор</a>
+        <a href="#pricing">Цены</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="actions">
+        <button class="btn ghost sm">Войти</button>
+        <button class="btn primary sm magnetic">Попробовать бесплатно</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-copy">
+        <h1 class="title reveal">
+          <span class="accent">JustSite</span>
+          <span class="subtitle">Make it simple.</span>
+        </h1>
+        <p class="lead reveal">
+          Конструктор сайтов нового поколения: собирайте лендинги, магазины и MVP за минуты, а не недели.
+          Простой интерфейс, готовые блоки, и AI‑помощник — всё, чтобы быстрее запускать и больше продавать.
+        </p>
+        <div class="cta reveal">
+          <button class="btn primary xl magnetic">Создать сайт за 10 минут</button>
+          <button class="btn ghost xl">Посмотреть шаблоны</button>
+        </div>
+        <div class="trust reveal">
+          <span class="pill">AI‑помощник в комплекте</span>
+          <span class="pill">SEO и аналитика</span>
+          <span class="pill">Интеграции и оплаты</span>
+        </div>
+      </div>
+
+      <div class="hero-3d" id="scene">
+        <div class="layer l-back" data-depth="-160">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+        </div>
+        <div class="layer l-middle" data-depth="-60">
+          <div class="card glass card-stats">
+            <div class="stat">
+              <span class="number">+312%</span>
+              <span class="label">Быстрее запуск</span>
+            </div>
+            <div class="stat">
+              <span class="number">98</span>
+              <span class="label">Шаблонов</span>
+            </div>
+            <div class="stat">
+              <span class="number"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="2"/></svg> AI</span>
+              <span class="label">Генерация контента</span>
+            </div>
+          </div>
+        </div>
+        <div class="layer l-front" data-depth="60">
+          <div class="card editor">
+            <div class="window-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="window-title">Редактор JustSite</span>
+            </div>
+            <div class="editor-body">
+              <div class="left">
+                <div class="block shimmer">Заголовок</div>
+                <div class="block shimmer">Текст</div>
+                <div class="block shimmer wide">Кнопка</div>
+                <div class="block shimmer">Изображение</div>
+              </div>
+              <div class="right">
+                <div class="canvas">
+                  <div class="widget title">Ваш новый сайт</div>
+                  <div class="widget paragraph">Красиво. Быстро. Просто.</div>
+                  <div class="widget cta">Начать</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-title reveal">Создавайте проекты в 3 клика</h2>
+      <p class="section-lead reveal">Без кода и стресса: выберите шаблон, добавьте контент, подключите домен и оплаты.</p>
+      <div class="grid">
+        <article class="feature reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h10M4 17h7" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Простой редактор</h3>
+          <p>Перетаскивайте готовые блоки, меняйте стили и публикуйте за минуты. Никакого кода.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l3.09 6.26L22 10.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 15.14l-5-4.87 6.91-1.01L12 3z" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>AI‑помощь</h3>
+          <p>Генерация текстов, изображений и структуры страницы под вашу нишу. Оптимизация для SEO.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1018 0 9 9 0 10-18 0zm9-5v5l3 3" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Скорость и конверсия</h3>
+          <p>Молниеносная загрузка, адаптивный дизайн, A/B‑тесты и готовые секции, которые продают.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4zM8 10h8M8 14h5" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Интеграции</h3>
+          <p>Подключайте CRM, платежи, формы, аналитику и чат‑ботов. Всё работает из коробки.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18M6 12h12M9 17h6" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Шаблоны и блоки</h3>
+          <p>Коллекция готовых дизайнов в трендах 2025: неон, стекло, градиенты, футуризм.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Рост продаж</h3>
+          <p>Тригерные секции, таймеры, лид‑формы и ремаркетинг — соберите в пару кликов.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Editor section -->
+  <section id="editor" class="editor-demo">
+    <div class="container">
+      <div class="cols">
+        <div class="col col-text reveal">
+          <h2>Редактор, который помогает</h2>
+          <p>Блок‑редактор с умными подсказками: он предложит улучшить заголовки, увеличить контраст, подобрать цветовые пары и сгенерировать тексты под ваш продукт.</p>
+          <ul class="list">
+            <li>Готовые блоки: hero, отзывы, цены, FAQ, футер</li>
+            <li>AI‑генерация: тексты, изображения, call‑to‑action</li>
+            <li>SEO‑чеклист и техническая оптимизация</li>
+            <li>Публикация на домен за 1 клик</li>
+          </ul>
+          <div class="cta">
+            <button class="btn primary magnetic">Открыть редактор</button>
+            <button class="btn ghost">Документация</button>
+          </div>
+        </div>
+        <div class="col col-visual reveal">
+          <div class="floating-stack" id="stack">
+            <div class="stack-card">Геро‑секция</div>
+            <div class="stack-card">Форма лидов</div>
+            <div class="stack-card">Блок отзывов</div>
+            <div class="stack-card">Тарифы</div>
+            <div class="stack-card">Футер</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <h2 class="section-title reveal">Прозрачные тарифы</h2>
+      <div class="plans">
+        <article class="plan reveal">
+          <h3>Starter</h3>
+          <div class="price">0₽</div>
+          <ul>
+            <li>1 сайт • базовые блоки</li>
+            <li>Поддомен JustSite</li>
+            <li>Базовая аналитика</li>
+          </ul>
+          <button class="btn ghost">Начать бесплатно</button>
+        </article>
+        <article class="plan highlight reveal">
+          <h3>Pro</h3>
+          <div class="price">990₽/мес</div>
+          <ul>
+            <li>Безлимитные страницы</li>
+            <li>AI‑помощник и A/B‑тесты</li>
+            <li>Свой домен и оплаты</li>
+          </ul>
+          <button class="btn primary magnetic">Выбрать Pro</button>
+        </article>
+        <article class="plan reveal">
+          <h3>Business</h3>
+          <div class="price">2990₽/мес</div>
+          <ul>
+            <li>Командная работа</li>
+            <li>Интеграции и вебхуки</li>
+            <li>Приоритетная поддержка</li>
+          </ul>
+          <button class="btn ghost">Запросить демо</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2 class="section-title reveal">Частые вопросы</h2>
+      <div class="faq-list">
+        <details class="reveal">
+          <summary>Нужно ли уметь кодить?</summary>
+          <p>Нет. Всё собирается из блоков: просто меняйте тексты и картинки. Для разработчиков доступны код‑блоки и экспорт.</p>
+        </details>
+        <details class="reveal">
+          <summary>Подходит ли для e‑commerce?</summary>
+          <p>Да. Поддерживаем каталоги, корзину, оплату картой, подписки и интеграции с CRM.</p>
+        </details>
+        <details class="reveal">
+          <summary>Как быстро сайт начинает работать?</summary>
+          <p>Сразу после публикации — CDN, SSL и оптимизация включены по умолчанию.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="brandline">
+        <span class="brand">JustSite</span>
+        <span class="tag">Make it simple</span>
+      </div>
+      <nav class="foot">
+        <a href="#features">Возможности</a>
+        <a href="#editor">Редактор</a>
+        <a href="#pricing">Цены</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="copyright">© <span id="year"></span> JustSite. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <div id="cursor" aria-hidden="true"></div>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
