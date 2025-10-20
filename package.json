@@ -1,0 +1,13 @@
+{
+  "name": "justsite-components-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bootstrap 5 HTML → Handlebars components generator with fields and metadata (MVP)",
+  "bin": {
+    "html-to-hbs": "tools/html-to-hbs.js"
+  },
+  "scripts": {
+    "generate:hero": "node tools/html-to-hbs.js --input ./examples/hero-basic.json"
+  },
+  "license": "MIT"
+}

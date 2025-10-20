@@ -1,0 +1,13 @@
+{
+  "$schema": "https://justsite.dev/schemas/fields.schema.json",
+  "version": "1.0.0",
+  "fields": [
+    { "key": "title", "type": "text", "label": "Заголовок", "default": "Build fast" },
+    { "key": "subtitle", "type": "text", "label": "Подзаголовок", "default": "Ship websites with prebuilt blocks." },
+    { "key": "btn_label", "type": "text", "label": "Текст кнопки", "default": "Get started" },
+    { "key": "btn_url", "type": "url", "label": "Ссылка кнопки", "default": "#" },
+    { "key": "section_classes", "type": "classes", "label": "Классы секции", "default": "py-5 bg-light" },
+    { "key": "container_classes", "type": "classes", "label": "Классы контейнера", "default": "container text-center" },
+    { "key": "btn_classes", "type": "classes", "label": "Классы кнопки", "default": "btn btn-primary btn-lg" }
+  ]
+}
