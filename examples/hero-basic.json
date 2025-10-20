@@ -1,0 +1,12 @@
+{
+  "componentName": "Hero Basic",
+  "category": "marketing/hero",
+  "tags": ["hero", "landing", "marketing"],
+  "sourceHtml": "<section class=\"py-5 bg-light\"><div class=\"container text-center\"><h1>Build fast</h1><p class=\"lead\">Ship websites with prebuilt blocks.</p><a class=\"btn btn-primary btn-lg\" href=\"#\">Get started</a></div></section>",
+  "options": {
+    "classesMode": "single",
+    "textEditable": true,
+    "attrEditable": ["href", "src", "alt", "title"]
+  },
+  "description": "Простой hero‑блок на Bootstrap 5 с заголовком, подзаголовком и кнопкой."
+}

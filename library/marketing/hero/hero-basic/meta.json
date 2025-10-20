@@ -1,0 +1,10 @@
+{
+  "name": "Hero Basic",
+  "slug": "hero-basic",
+  "category": "marketing/hero",
+  "tags": ["hero", "landing", "marketing"],
+  "description": "Простой hero‑блок на Bootstrap 5 с заголовком, подзаголовком и кнопкой.",
+  "bootstrap": "5",
+  "accessibility": { "ariaReady": true },
+  "version": "1.0.0"
+}
